@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="ko-KR">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.03.org/1999/xhtml" lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>테이블 관련 요소 | Likelion Bootcamp</title>
-    <style>
+    <style type="text/css">
       .html-css {
         width: 100px;
         background-color: aquamarine;
@@ -62,6 +62,7 @@
         </tr>
       </tbody>
       <tfoot>
+        <!--중간에 마크업 되어도 제일 하단에 노출된다-->
         <tr>
           <th scope="row">합계</th>
           <td colspan="3">10000</td>
@@ -99,7 +100,7 @@
     </table>
     <hr />
 
-    <table>
+    <table summary="학습시간, 난이도, 교육비 지원, 평가항목, 수료기준, 교재정보">
       <caption>
         입문자를 위한 Git과 HTML&CSS 과정 학습시간, 난이도, 교육비 지원, 평가항목, 수료기준, 정원, 교재 정보 등을 나타낸 표
       </caption>
