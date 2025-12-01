@@ -3,10 +3,38 @@ body {
   color: green;
 }
 
-p {
-  color: red;
+.a .b .c .d .e .f .g .h .i .j .k .l {
+  color: yellow;
+}
+
+#coding {
+  color: blue;
 }
 
 .wrapper {
   color: blue;
+}
+
+/* 구체성 점수 */
+body .wrapper p.note {
+  color: red;
+}
+
+.like {
+  color: purple;
+}
+
+body p.note.frontend {
+  color: teal;
+  background-color: pink;
+}
+
+body p.note.like {
+  color: brown;
+}
+
+/* !important는 최후의 보루로 사용해라 */
+
+.wrapper p {
+  color: lightseagreen !important;
 }
