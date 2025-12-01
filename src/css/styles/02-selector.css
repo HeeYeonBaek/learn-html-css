@@ -1,0 +1,102 @@
+/* CSS 선택자 */
+
+/* 전체 선택자(universal selector) */
+* {
+  background-color: #fcf;
+}
+
+/* 타입 선택자, 태그 선택자, 요소 선택자 */
+body {
+  background-color: yellow;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* class 선택자 */
+.lion {
+  background-color: salmon;
+}
+
+/* id 선택자 */
+#bootcamp {
+  background-color: green;
+}
+
+/* 속성 선택자 */
+[title^='멋사'] {
+  font-size: 24px;
+}
+
+/* 자손 결합자와 자식 결합자 */
+.frontend .lion {
+  border: 5px solid blue;
+}
+
+.like > .lion {
+  font-size: 36px;
+}
+
+/* 형제 결합자 */
+h2 + p /*인접 형제 선택자*/ {
+  font-weight: 900;
+}
+
+h2 ~ p {
+  color: blue;
+}
+
+/* :: > 가상 요소 선택자*/
+p::first-letter {
+  font-size: 60px;
+}
+
+/* 앞에 아무것도 없으면 전체 선택 */
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+h1::before {
+  /* 반드시 content 속성이 필수 */
+  /* 가짜로 first child를 생성한다 */
+  content: '웹표준 - ';
+}
+
+h1::after {
+  /* 반드시 content 속성이 필수 */
+  /* 가짜로 last child를 생성한다 */
+  content: '(멋사)';
+}
+/* WAI-ARIA에서도 읽어준다. */
+
+/* 가상 클래스 */
+
+/* 사용자 정의 속성 지정 */
+
+/* hover 마우스를 올린다 - 모든 요소에 사용 가능 */
+/* focus / 포커서블 개체에서만 사용 가능, 포커스 개체가 아니여도 tabindex를 부여하면 사용할 수 있다. */
+
+a {
+  font-size: 48px;
+}
+
+a:hover {
+  /* 상태 선택 */
+  background-color: darkblue;
+  color: #fff;
+}
+
+h1:hover {
+  background-color: red;
+  color: #fff;
+}
+
+a:focus {
+  background-color: red;
+  color: #fff;
+}
+
+/* CSS는 글로벌 선언이기 때문에 우선으로 선언된 것이 먼저 선언된다. */
