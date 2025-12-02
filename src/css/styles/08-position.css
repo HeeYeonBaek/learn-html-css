@@ -1,0 +1,62 @@
+/* Position 레이아웃 */
+/* position: relative */
+
+.frontend {
+  position: relative;
+  top: -100px;
+  background-color: #000;
+  /* left와 right를 줄 때는 둘 중 1개만 수정 */
+  /* 본래의 위치 유지 */
+
+  span {
+    position: relative;
+    /* 마크업한 순서대로 흘러감 */
+    top: -5px;
+    left: -5px;
+    display: block;
+    background-color: #ffc;
+    padding: 10px;
+  }
+}
+
+/* position: absolute */
+/* relative와 다르게 일반적인 흐름에서 벗어나서 배치 */
+/* relative와 달리 position 값이 static이 아닌 요소를 기준으로 배치 */
+/* absolute은 block, lnline 구분 없이 속성이 지정되는 순간 block으로 지정 */
+
+.wrapper {
+  position: relative;
+  border: 1px solid blue;
+}
+
+.school {
+  span {
+    background-color: #cff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 200px;
+    height: 100px; */
+    /* inline 상자의 특징 : 컨텐츠가 추가되면 박스의 크기가 늘어나지만 width, height 값으로는 수정되지 않는다. */
+    /* absolute는 가까운 부모의 기준이 static만 아니면 해당 부모의 기준에 맞춰서 배치가 된다. */
+    /*relative만 들어가는게 아닌 absolute, fixed도 들어갈 수 있다.  */
+  }
+}
+
+/* position: fixed */
+
+/* fixed도 마찬가지로 지정되는 순간 block 속성으로 지정된다. */
+
+.likelion {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: orange;
+  width: 100px;
+  height: 50px;
+  font-weight: 700;
+  text-align: center;
+  align-content: center; /*세로정렬*/
+  /* BFC : block fommating  */
+  /* absolute는 자신의 상위가 static이 아닌 것을 찾지만 fixed는 viewport 기준 */
+}
