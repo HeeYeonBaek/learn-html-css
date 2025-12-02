@@ -1,0 +1,53 @@
+/* 색상 및 배경 */
+
+/* color 속성 */
+.like {
+  color: red;
+  color: #f00;
+  color: rgba(255, 0, 0 0.5);
+  color: rgb(255 0 0 / 0.5);
+  color: hsla(110, 50%, 20%, 0.5);
+  /* 컴마 찍는건 래거시 방식 */
+}
+
+/* background-color 속성 */
+.wrapper {
+  background-color: blue;
+  padding: 5px;
+
+  .euid {
+    background-color: yellow;
+  }
+}
+
+/* background-image / background-repeat / background-position / background-size */
+
+.container {
+  border: 1px solid red;
+  margin-block: 20px; /*논리 속성,  위 아래 여백 주기*/
+  /* background-image:
+    url(/src/assets/images/tree.png),
+    url(/src/assets/images/cloud.png)
+  background-size:
+    contain,
+    100px 50px;
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    50% 0,
+    70% 0; */
+  background:
+    url(/src/assets/images/cloud.png) no-repeat 70% 0 /100px 50px,
+    url(/src/assets/images/tree.png) no-repeat 50% 0 / contain,
+    skyblue;
+
+  /* 값을 구분할 땐 컴마 or 띄어쓰기 */
+  /* 배경은 먼저 선언되는 순서로 위로 올라온다. */
+  /* 배경의 색상은 오직 1번만 선언할 수 있다. 그러므로 맨 마지막 순서에 선언한다. */
+}
+
+/* background-image: linear-gradient() - 그라데이션 속성 */
+.frontend {
+  border: 5px solid blue;
+  background-image: linear-gradient(45deg, red, green);
+  border-radius: 20px;
+}
