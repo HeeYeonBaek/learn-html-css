@@ -1,0 +1,19 @@
+/* CSS 중첩 */
+.frontend {
+  font-size: 10px;
+  padding: 20px;
+  border: 1px solid green;
+
+  /* 나를 포함한 내 그룹을 연결할 땐 & */
+  &:hover {
+    background-color: #fcf;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+/* .frontend:hover {
+  background-color: #ffc;
+} */
