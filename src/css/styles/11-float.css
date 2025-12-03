@@ -1,6 +1,7 @@
 /* Float 레이아웃 */
 /* float: left */
 /* float으로 인해 발생한 레이아웃 이슈를 overflow 속성으로 해결 */
+
 .wrapper {
   border: 5px solid red;
   overflow: hidden;
