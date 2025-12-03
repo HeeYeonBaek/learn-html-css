@@ -1,8 +1,8 @@
 /* 사용자 정의 속성 */
-
+/* 특정 */
 @property --primary-color {
   syntax: '<color>';
-  inherits: false;
+  inherits: false; /*false : 상속받지 X, true 상속 받는다 O*/
   initial-value: rgb(7, 137, 111);
 }
 
@@ -24,7 +24,7 @@ body {
 .wrapper {
   --default-color: yellow;
   --primary-color: red;
-
+  /* 지역속성 */
   color: var(--primary-color);
   margin-block: 20px;
   border: 1px solid var(--main-color);
