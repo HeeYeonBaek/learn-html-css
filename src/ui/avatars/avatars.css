@@ -10,7 +10,6 @@
 
   width: var(--avatar-size);
   height: var(--avatar-size);
-  background: orange;
   position: relative;
 
   img {
