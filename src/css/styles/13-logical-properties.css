@@ -1,0 +1,26 @@
+/* 논리속성과 논리값 */
+/* width, height */
+
+/* width에 대항되는 속성 > inline-size */
+/* height에 대항하는 속성 > block-size */
+.like {
+  background: #ffc;
+  inline-size: 200px;
+  block-size: 100px;
+}
+
+/* margin, padding */
+.lion {
+  background: #fcf;
+  padding-block: 20px;
+  margin-inline: 20px;
+}
+
+/* position: top, right, bottom, left */
+.bootcamp {
+  background: #cff;
+  position: absolute;
+  block-size: 100px;
+  inline-size: 100px;
+  inset: 0;
+}
