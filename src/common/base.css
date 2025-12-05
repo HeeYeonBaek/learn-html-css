@@ -1,12 +1,7 @@
 /* 기본 스타일 */
 /* CSS 예제 본문 스타일 */
-.css {
+.spacing-20 {
   margin: 20px;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
 
   h1 {
     margin-block: 20px;
@@ -24,6 +19,12 @@
 /* 기본스타일 */
 body {
   font-family: 'SUIT Variable', sans-serif;
+}
+
+/* 링크(a 요소) 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* copy component */
