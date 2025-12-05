@@ -1,0 +1,92 @@
+/* 테이블 스타일링 */
+
+/* 내가 짠거 */
+.members-wrapper {
+  block-size: 500px;
+  overflow: auto;
+}
+/*   .members {
+    border-spacing: 0;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .number {
+    inline-size: 15%;
+  }
+
+  .name {
+    inline-size: 20%;
+  }
+
+  .email {
+    inline-size: 30%;
+  }
+
+  .phone {
+    inline-size: 30%;
+  }
+
+  thead {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--gray);
+  }
+
+  tfoot {
+    background: var(--black);
+    color: var(--white);
+  }
+} */
+
+/* 선생님 답 */
+
+.members {
+  inline-size: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 16px;
+  border-inline: 1px solid var(--black);
+
+  .number {
+    inline-size: 15%;
+  }
+
+  .name {
+    inline-size: 20%;
+  }
+
+  .email {
+    inline-size: 30%;
+  }
+
+  .phone {
+    inline-size: 30%;
+  }
+
+  thead tr,
+  tfoot tr {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  thead tr {
+    position: sticky;
+    top: 0;
+  }
+
+  tr:nth-child(even) {
+    background: var(--gray);
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 0.5em 1em;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
