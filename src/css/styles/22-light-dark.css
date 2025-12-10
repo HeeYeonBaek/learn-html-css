@@ -1,0 +1,35 @@
+:root {
+  color-scheme: light dark;
+}
+/* 라이트 / 다크모드 */
+
+/* light 모드 스타일 */
+body {
+  background: yellow;
+  color: green;
+}
+
+/* dark 모드 스타일 */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+}
+
+/* 라이트/다크 모드 스타일 - 중첩선언방식 */
+body {
+  background: yellow;
+  color: green;
+
+  @media (prefers-color-scheme: dark) {
+    background: purple;
+    color: #fff;
+  }
+}
+
+body {
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #223a2c);
+}
