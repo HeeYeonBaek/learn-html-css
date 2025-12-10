@@ -32,3 +32,27 @@ button {
 
   mask-image: linear-gradient(to bottom, transparent 0% 35%, #000 35% 65%, transparent 65% 100%), linear-gradient(to right, transparent 0% 35%, #000 35% 65%, transparent 55% 100%);
 }
+
+.message {
+  background: hotpink;
+  display: inline-block;
+  height: 100px;
+  padding: 20px;
+  border: 10px solid skyblue;
+  font-size: 48px;
+  font-weight: 900;
+  mask-image: url(/src/assets/svg/heart.svg);
+  mask-origin: padding-box;
+  mask-repeat: no-repeat;
+  mask-size: 280px;
+  color: yellow;
+  mask-position: 0 0;
+  mask-mode: auto;
+  height: 280px;
+  align-content: center;
+  transition: all 3s;
+
+  &:hover {
+    mask-position: 100% 0;
+  }
+}
