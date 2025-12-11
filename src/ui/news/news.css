@@ -1,0 +1,82 @@
+/* 이디야 News */
+:root {
+  --white: #fff;
+  --gray: #878787;
+  --gray-dark: #14182c;
+  --blue-100: #3030e0;
+  --blue-200: #24388d;
+  --blue-300: #111166;
+
+  --start-color: var(--blue-100);
+  --end-color: var(--blue-300);
+}
+/* 
+.news {
+  box-shadow: 0 0 0 1px red;
+  background: var(--blue-100);
+  color: var(--white);
+  padding: 16px;
+
+  display: grid;
+  grid-template-areas:
+    'news-title news-title more'
+    'news-list tnews-list news-list';
+
+  .news-list {
+    grid-column: 1 / 6;
+    margin-block: 16px;
+  }
+
+  .news-list li {
+    margin-block: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .more {
+    grid-row: 1 / 6;
+    grid-column: 6 / 6;
+  }
+} */
+
+/* 새소식 레이아웃 - grid 레이아웃 */
+
+.news {
+  background: var(--blue-100);
+  color: var(--white);
+  padding: 16px;
+  display: grid;
+  min-inline-size: 320px;
+  grid-template-columns: minmax(200px, 1fr) max-content;
+  gap: 8px;
+
+  .news-title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-block-end: 8px;
+  }
+
+  .news-list {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    letter-spacing: -0.02rem;
+
+    a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .news-list,
+  .news-item {
+    display: contents;
+  }
+
+  .more {
+    grid-area: 1 / 2;
+    place-self: start end;
+  }
+}
