@@ -1,0 +1,109 @@
+@import 'src/common/index.css';
+
+:root {
+  --black: #111111;
+  --white: #fff;
+  --white-80: rgba(255, 255, 255, 0.8);
+  --violet: #8851ed;
+  --title: 42px;
+  --midtitle: 32px;
+  --text: 16px;
+}
+
+body {
+  background: var(--black);
+}
+
+.container {
+  display: grid;
+  inline-size: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 40px;
+
+  .sectionArea {
+    background: var(--white-80);
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    grid-column: 1 / 7;
+    block-size: auto;
+    padding-block: 12px;
+    font-size: var(--title);
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  h2 {
+    padding-block-end: 20px;
+    font-size: var(--midtitle);
+  }
+
+  .profile {
+    grid-column: 1 / 7;
+
+    .profile-info {
+      display: flex;
+      flex-flow: nowrap row;
+      gap: 20px;
+
+      .profile-list {
+        flex: 1 1 0;
+        align-items: center;
+
+        li {
+          padding-block: 8px;
+          font-size: var(--text);
+          font-weight: 700;
+        }
+
+        .profile-markup {
+          display: block;
+          float: left;
+          inline-size: 80px;
+          padding-block: 8px;
+          margin-inline-end: 10px;
+          align-items: center;
+          text-align: center;
+          border-radius: 20px;
+          background: var(--black);
+          color: var(--white);
+        }
+      }
+    }
+  }
+
+  .studyBox {
+    grid-column: span 3;
+
+    li {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+
+      &:hover {
+        background: var(--black);
+        color: var(--white);
+        font-weight: 700;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  @media (width >= 768px) {
+    .container {
+      display: grid;
+      inline-size: 100%;
+      grid-template-rows: repeat(1fr);
+      row-gap: 20px;
+      column-gap: 20px;
+      padding: 40px;
+
+      .studyBox {
+        grid-row: 1fr;
+      }
+    }
+  }
+}
