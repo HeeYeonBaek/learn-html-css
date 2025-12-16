@@ -136,7 +136,6 @@
   display: grid;
   grid-template-columns: 125px minmax(200px, 1fr);
   min-width: 320px;
-  border: 1px solid var(--blue-300);
 
   h2,
   div {
@@ -180,5 +179,38 @@
         display: block;
       }
     }
+  }
+}
+
+/* 고객 감사 영상 - iframe 요소 */
+
+/* .ediya-youtube {
+  figure {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+} */
+
+.ediya-youtube {
+  figure {
+    position: relative;
+    aspect-ratio: 16 / 9;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
