@@ -81,7 +81,8 @@ body {
 
     li {
       padding: 8px;
-      border-bottom: 1px solid #ccc;
+      margin-block: 8px;
+      border-left-style: 1px solid #777;
 
       &:hover {
         background: var(--black);
