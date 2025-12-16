@@ -92,19 +92,24 @@ body {
       }
     }
   }
+}
 
-  @media (width >= 768px) {
-    .container {
-      display: grid;
-      inline-size: 100%;
-      grid-template-rows: repeat(1fr);
-      row-gap: 20px;
-      column-gap: 20px;
-      padding: 40px;
+@media (min-width: 768px) {
+  .container {
+    inline-size: 100%;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 40px;
 
-      .studyBox {
-        grid-row: 1fr;
+    .profile {
+      .profile-info {
+        display: flex;
+        flex-direction: column;
       }
+    }
+
+    .studyBox {
+      grid-row: 1fr;
     }
   }
 }
